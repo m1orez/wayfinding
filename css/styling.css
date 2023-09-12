@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 800px;
+    height: 1280px;
+    overflow-y: hidden;
+    background-color: #180C31;
+}
+
+nav {
+    width: 170%;
+    height: 80px;
+    border-bottom: 3px solid #FD4556;
+}
+
+main img {
+    overflow-y: hidden;
+    height: 1070px;
+}
+
+footer {
+    width: 170%;
+    border-top: 4px solid #FD4556;
+    z-index: 30;
+}
