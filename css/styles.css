@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1280px;
+    height: 800px;
+    overflow: hidden;
+}
+
+body img {
+    width: 1280px;
+    height: 900px;
+    object-fit: cover;
+    overflow: hidden;
+    position: absolute;
+}
+
+button {
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background-color: white;
+    border: none;
+    outline: 10px solid #4A89F3;
+    filter: drop-shadow(0px 0px 10px #4A89F3);
+    z-index: 5;
+    position: absolute;
+}
+
+#locatie-1 {
+    top: 283px;
+    left: 577px;
+}
+
+#locatie-2 {
+    top: 450px;
+    left: 680px;
+}
+
+#locatie-3 {
+    top: 445px;
+    left: 610px;
+}
+
+#locatie-4 {
+    top: 500px;
+    left: 435px;
+}
+
+#locatie-5 {
+    top: 360px;
+    left: 480px;
+}
+
+#locatie-6 {
+    top: 400px;
+    left: 545px;
+}
+
+#locatie-7 {
+    top: 535px;
+    left: 600px;
+}
+
+button:hover {
+    cursor: pointer;
+    animation: fadeIn 0.5s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    to {
+        background-color: #4A89F3;
+    }
+}
