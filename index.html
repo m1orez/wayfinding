@@ -7,22 +7,50 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <img src="./img/Rotterdam.png" alt="Rotterdam">
-    <div>x  
+    <img id="map" src="./img/rotterdam.png" alt="Rotterdam">
+    <nav role="navigation">
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>About</li></a>
+            <a href="#"><li>Info</li></a>
+            <a href="#"><li>Contact</li></a>
+          </ul>
+        </div>
+      </nav>
+    <div>
         <!-- GLR -->
-        <button id="locatie-1"></button>
-        <!-- markthal -->
-        <button id="locatie-2"></button>
+        <button id="locatie-1" class="school"></button>
+        <!-- zadkine -->
+        <button id="locatie-2" class="school"></button>
+        <!-- albeda -->
+        <button id="locatie-3" class="school"></button>
+        <!-- codarts -->
+        <button id="locatie-4" class="school"></button>
+        <!-- rotterdam centraal -->
+        <button id="locatie-5" class="travel"></button>
+        <!-- metro stadhuis -->
+        <button id="locatie-6" class="travel"></button>
+        <!-- shabu shabu -->
+        <button id="locatie-7" class="foodAndDrinks"></button>
         <!-- coco -->
-        <button id="locatie-3"></button>
-        <!-- moves -->
-        <button id="locatie-4"></button>
-        <!-- centraal station -->
-        <button id="locatie-5"></button>
-        <!-- bershka -->
-        <button id="locatie-6"></button>
-        <!-- takumi -->
-        <button id="locatie-7"></button>
+        <button id="locatie-8" class="foodAndDrinks"></button>
+        <!-- sapporro -->
+        <button id="locatie-9" class="foodAndDrinks"></button>
+        <!-- goat -->
+        <button id="locatie-10" class="foodAndDrinks"></button>
+    </div>
+    <div id="infoCard">
+      <img src="./img/locatie1.jpeg" alt="locatie-1">
+      <div id="beschrijvingContainer"> 
+        <h2 id="locatieNaam">locatie naam</h2>
+        <p id="locatieBeschrijving">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat harum reiciendis tenetur eius. Culpa, ullam nihil consectetur rerum, exercitationem veniam cumque adipisci recusandae perferendis, repudiandae ea autem assumenda natus amet.</p>
+      </div>
     </div>
 </body>
+<script src="./js/index.js"></script>
 </html>
