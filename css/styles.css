@@ -11,7 +11,7 @@ body {
 
 #map {
   width: 1280px;
-  height: 838px;
+  height: 800px;
   object-fit: cover;
   overflow: hidden;
   position: absolute;
@@ -30,7 +30,7 @@ nav {
   position: relative;
   top: 40px;
   left: 20px;
-  z-index: 50 ;
+  z-index: 5;
   -webkit-user-select: none;
   user-select: none;
 }
