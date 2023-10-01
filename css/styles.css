@@ -28,20 +28,80 @@ nav {
 #menuToggle {
   display: block;
   position: relative;
-  top: 40px;
+  top: 20px;
   left: 20px;
   z-index: 5;
   -webkit-user-select: none;
   user-select: none;
 }
 
-#menuToggle a {
-  text-decoration: none;
+#menuToggle .checkbox {
   color: #232323;
   transition: color 0.3s ease;
+  font-size: 25px;
+  padding: 5px 20px;
+  display: flex;
 }
 
-#menuToggle input {
+#menuToggle .checkbox label {
+  padding-left: 20px;
+}
+
+#menuToggle .checkbox #school::before {
+  background-color: black;
+}
+
+#menuToggle .checkbox #foodAndDrinks::before {
+  background-color: red;
+}
+
+#menuToggle .checkbox #travel::before {
+  background-color: #4a89f3;
+}
+
+#menuToggle .checkbox #stores::before {
+  background-color: #33a908;
+}
+
+#menuToggle .checkbox #tourism::before {
+  background-color: #a800fc;
+}
+
+#menuToggle .checkbox #activities::before {
+  background-color: #fc00a4;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--form-background);
+  margin: 0;
+  font: inherit;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transform: scale(0);
+  transform-origin: bottom left;
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+#menuToggle #openMenu {
   display: block;
   width: 40px;
   height: 32px;
@@ -82,18 +142,18 @@ nav {
   transform-origin: 0% 100%;
 }
 
-#menuToggle input:checked ~ span {
+#menuToggle #openMenu:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
   background: #232323;
 }
 
-#menuToggle input:checked ~ span:nth-last-child(3) {
+#menuToggle #openMenu:checked ~ span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-#menuToggle input:checked ~ span:nth-last-child(2) {
+#menuToggle #openMenu:checked ~ span:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px);
 }
 
@@ -115,12 +175,7 @@ nav {
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
-#menu li {
-  padding: 10px 0;
-  font-size: 22px;
-}
-
-#menuToggle input:checked ~ ul {
+#menuToggle #openMenu:checked ~ ul {
   transform: none;
 }
 
@@ -170,53 +225,108 @@ button:hover {
 }
 
 #locatie-1 {
-  top: 80px;
+  top: 60px;
   left: 490px;
 }
 
 #locatie-2 {
-  top: 40px;
+  top: 20px;
   left: 495px;
 }
 
 #locatie-3 {
-  top: 315px;
+  top: 295px;
   left: 180px;
 }
 
 #locatie-4 {
-  top: 370px;
+  top: 350px;
   left: 340px;
 }
 
 #locatie-5 {
-  top: 280px;
+  top: 260px;
   left: 280px;
 }
 
 #locatie-6 {
-  top: 280px;
+  top: 260px;
   left: 560px;
 }
 
 #locatie-7 {
-  top: 640px;
+  top: 620px;
   left: 540px;
 }
 
 #locatie-8 {
-  top: 465px;
+  top: 445px;
   left: 630px;
 }
 
 #locatie-9 {
-  top: 435px;
+  top: 415px;
   left: 524px;
 }
 
 #locatie-10 {
-  top: 640px;
+  top: 620px;
   left: 600px;
+}
+
+#locatie-11 {
+  top: 670px;
+  left: 510px;
+}
+
+#locatie-12 {
+  top: 480px;
+  left: 585px;
+}
+
+#locatie-13 {
+  top: 330px;
+  left: 480px;
+}
+
+#locatie-14 {
+  top: 355px;
+  left: 490px;
+}
+
+#locatie-15 {
+  top: 520px;
+  left: 570px;
+}
+
+#locatie-16 {
+  top: 390px;
+  left: 480px;
+}
+
+#locatie-17 {
+  top: 450px;
+  left: 820px;
+}
+
+#locatie-18 {
+  top: 440px;
+  left: 890px;
+}
+
+#locatie-19 {
+  top: 540px;
+  left: 440px;
+}
+
+#locatie-20 {
+  top: 490px;
+  left: 210px;
+}
+
+#locatie-21 {
+  top: 510px;
+  left: 445px;
 }
 
 @keyframes fadeIn {
@@ -229,7 +339,7 @@ button:hover {
   position: relative;
   z-index: 5;
   background-color: white;
-  margin: 75px 440px;
+  margin: 70px 440px;
   border-radius: 20px;
   border: 4px solid rgb(198, 198, 198);
   display: none;
@@ -253,7 +363,7 @@ button:hover {
 }
 
 #infoCard #beschrijvingContainer {
-  padding: 40px;
+  padding: 0 40px 40px 40px;
   text-align: center;
 }
 

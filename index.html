@@ -1,58 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wayfinder</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
-    <img id="map" src="./img/rotterdam.png" alt="Rotterdam">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <img id="map" src="./img/rotterdam.png" alt="Rotterdam" />
     <nav role="navigation">
-        <div id="menuToggle">
-          <input type="checkbox" />
-          <span></span>
-          <span></span>
-          <span></span>
-          <ul id="menu">
-            <a href="#"><li>Home</li></a>
-            <a href="#"><li>About</li></a>
-            <a href="#"><li>Info</li></a>
-            <a href="#"><li>Contact</li></a>
-          </ul>
-        </div>
-      </nav>
+      <div id="menuToggle">
+        <input id="openMenu" type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+          <div class="checkbox">
+            <input id="school" type="checkbox"checked data-target="school" />
+            <label for="school">Scholen</label>
+          </div>
+          <div class="checkbox">
+            <input id="travel" type="checkbox" checked data-target="travel" />
+            <label for="travel">Openbaar vervoer</label>
+          </div>
+          <div class="checkbox">
+            <input id="foodAndDrinks" type="checkbox" checked data-target="foodAndDrinks" />
+            <label for="foodAndDrinks">Eten & drinken</label>
+          </div>
+          <div class="checkbox">
+            <input id="stores" type="checkbox" checked data-target="stores" />
+            <label for="stores">Winkels</label>
+          </div>
+          <div class="checkbox">
+            <input id="tourism" type="checkbox" checked data-target="tourism" />
+            <label for="tourism">Tourisme</label>
+          </div>
+          <div class="checkbox">
+            <input id="activities" type="checkbox" checked data-target="activities" />
+            <label for="activities">Activiteiten</label>
+          </div>
+        </ul>
+      </div>
+    </nav>
     <div>
-        <!-- GLR -->
-        <button id="locatie-1" class="school"></button>
-        <!-- zadkine -->
-        <button id="locatie-2" class="school"></button>
-        <!-- albeda -->
-        <button id="locatie-3" class="school"></button>
-        <!-- codarts -->
-        <button id="locatie-4" class="school"></button>
-        <!-- rotterdam centraal -->
-        <button id="locatie-5" class="travel"></button>
-        <!-- metro stadhuis -->
-        <button id="locatie-6" class="travel"></button>
-        <!-- shabu shabu -->
-        <button id="locatie-7" class="foodAndDrinks"></button>
-        <!-- coco -->
-        <button id="locatie-8" class="foodAndDrinks"></button>
-        <!-- sapporro -->
-        <button id="locatie-9" class="foodAndDrinks"></button>
-        <!-- goat -->
-        <button id="locatie-10" class="foodAndDrinks"></button>
+      <!-- GLR -->
+      <button id="locatie-1" class="school"></button>
+      <!-- zadkine -->
+      <button id="locatie-2" class="school"></button>
+      <!-- albeda -->
+      <button id="locatie-3" class="school"></button>
+      <!-- codarts -->
+      <button id="locatie-4" class="school"></button>
+      <!-- rotterdam centraal -->
+      <button id="locatie-5" class="travel"></button>
+      <!-- metro stadhuis -->
+      <button id="locatie-6" class="travel"></button>
+      <!-- shabu shabu -->
+      <button id="locatie-7" class="foodAndDrinks"></button>
+      <!-- coco -->
+      <button id="locatie-8" class="foodAndDrinks"></button>
+      <!-- sapporro -->
+      <button id="locatie-9" class="foodAndDrinks"></button>
+      <!-- goat -->
+      <button id="locatie-10" class="foodAndDrinks"></button>
+      <!-- soju bar -->
+      <button id="locatie-11" class="foodAndDrinks"></button>
+      <!-- wok to go -->
+      <button id="locatie-12" class="foodAndDrinks"></button>
+      <!-- bershka -->
+      <button id="locatie-13" class="stores"></button>
+      <!-- pull & bear -->
+      <button id="locatie-14" class="stores"></button>
+      <!-- bookwinkel donner -->
+      <button id="locatie-15" class="stores"></button>
+      <!-- dr martens -->
+      <button id="locatie-16" class="stores"></button>
+      <!-- markthal -->
+      <button id="locatie-17" class="tourism"></button>
+      <!-- kubuswoningen -->
+      <button id="locatie-18" class="tourism"></button>
+      <!-- schouwburgplein -->
+      <button id="locatie-19" class="tourism"></button>
+      <!-- moves dansschool -->
+      <button id="locatie-20" class="activities"></button>
+      <!-- pathe schouwburgplein -->
+      <button id="locatie-21" class="activities"></button>
     </div>
     <div id="infoCard">
-      <img src="./img/locatie-1.jpeg" alt="locatie image" id="locatieImg">
-      <i id="closeButton"class="fa fa-close" style="font-size:36px"></i>
-      <div id="beschrijvingContainer"> 
+      <img src="./img/locatie-1.jpeg" alt="locatie image" id="locatieImg" />
+      <i id="closeButton" class="fa fa-close" style="font-size: 36px"></i>
+      <div id="beschrijvingContainer">
         <h2 id="locatieNaam">locatie naam</h2>
-        <p id="locatieBeschrijving">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat harum reiciendis tenetur eius. Culpa, ullam nihil consectetur rerum, exercitationem veniam cumque adipisci recusandae perferendis, repudiandae ea autem assumenda natus amet.</p>
+        <p id="locatieBeschrijving">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat
+          harum reiciendis tenetur eius. Culpa, ullam nihil consectetur rerum,
+          exercitationem veniam cumque adipisci recusandae perferendis,
+          repudiandae ea autem assumenda natus amet.
+        </p>
       </div>
     </div>
-</body>
-<script src="./js/index.js"></script>
+  </body>
+  <script src="./js/index.js"></script>
 </html>
