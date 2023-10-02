@@ -179,13 +179,51 @@ input[type="checkbox"]:checked::before {
   transform: none;
 }
 
+.weatherCard {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
+  width: 250px;
+  border-radius: 27px;
+}
+
+#weatherCardImg {
+  margin-left: 60px;
+  margin-top: 30px;
+  width: 130px;
+}
+
+.weatherCard h1 {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+}
+
 button {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-left: -115px;
+  
+  border-radius: 50% 50% 50% 0;
+  border: 4px solid #fff;
+  width: 25px;
+  height: 25px;
+  transform: rotate(-45deg);
+}
+
+button::after {
+  position: absolute;
+  content: '';
   width: 10px;
   height: 10px;
-  z-index: 2;
-  border-radius: 50px;
-  border: none;
-  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  margin-left: -5px;
+  margin-top: -5px;
+  background-color: #fff;
 }
 
 button:hover {
@@ -194,144 +232,162 @@ button:hover {
   animation-fill-mode: both;
 }
 
-.school {
-  outline: 7px solid black;
-  filter: drop-shadow(0px 0px 10px black);
+.school { 
+  border: 4px solid black;
 }
 
-.foodAndDrinks {
-  outline: 7px solid #fa0000;
-  filter: drop-shadow(0px 0px 10px #ff0000);
+.school::after {
+  background-color: black;
 }
 
-.travel {
-  outline: 7px solid #4a89f3;
-  filter: drop-shadow(0px 0px 10px #4a89f3);
+.foodAndDrinks { 
+  border: 4px solid red;
 }
 
-.stores {
-  outline: 7px solid #33a908;
-  filter: drop-shadow(0px 0px 10px #33a908);
+.foodAndDrinks::after {
+  background-color: red;
 }
 
-.tourism {
-  outline: 7px solid #a800fc;
-  filter: drop-shadow(0px 0px 10px #a800fc);
+.travel { 
+  border: 4px solid #4a89f3;
 }
 
-.activities {
-    outline: 7px solid #fc00a4;
-    filter: drop-shadow(0px 0px 10px #fc00a4);
+.travel::after {
+  background-color: #4a89f3;
+}
+
+.stores { 
+  border: 4px solid #33a908;
+}
+
+.stores::after {
+  background-color: #33a908;
+}
+
+.activities { 
+  border: 4px solid #fc00a4;
+}
+
+.activities::after {
+  background-color: #fc00a4;
+}
+
+.tourism { 
+  border: 4px solid #a800fc;
+}
+
+.tourism::after {
+  background-color: #a800fc;
 }
 
 #locatie-1 {
-  top: 60px;
-  left: 490px;
+  top: 40px;
+  left: 610px;
 }
 
 #locatie-2 {
-  top: 20px;
-  left: 495px;
+  top: 10px;
+  left: 630px;
 }
 
 #locatie-3 {
-  top: 295px;
-  left: 180px;
+  top: 275px;
+  left: 280px;
 }
 
 #locatie-4 {
-  top: 350px;
-  left: 340px;
+  top: 340px;
+  left: 450px;
 }
 
 #locatie-5 {
   top: 260px;
-  left: 280px;
+  left: 400px;
 }
 
 #locatie-6 {
-  top: 260px;
-  left: 560px;
+  top: 240px;
+  left: 660px;
 }
 
 #locatie-7 {
-  top: 620px;
-  left: 540px;
+  top: 600px;
+  left: 650px;
 }
 
 #locatie-8 {
-  top: 445px;
-  left: 630px;
+  top: 425px;
+  left: 740px;
 }
 
 #locatie-9 {
-  top: 415px;
-  left: 524px;
+  top: 395px;
+  left: 634px;
 }
 
 #locatie-10 {
-  top: 620px;
-  left: 600px;
+  top: 600px;
+  left: 710px;
 }
 
 #locatie-11 {
-  top: 670px;
-  left: 510px;
+  top: 650px;
+  left: 620px;
 }
 
 #locatie-12 {
-  top: 480px;
-  left: 585px;
+  top: 460px;
+  left: 694px;
 }
 
 #locatie-13 {
-  top: 330px;
-  left: 480px;
+  top: 300px;
+  left: 590px;
 }
 
 #locatie-14 {
-  top: 355px;
-  left: 490px;
+  top: 330px;
+  left: 600px;
 }
 
 #locatie-15 {
-  top: 520px;
-  left: 570px;
+  top: 490px;
+  left: 680px;
 }
 
 #locatie-16 {
-  top: 390px;
-  left: 480px;
+  top: 370px;
+  left: 590px;
 }
 
 #locatie-17 {
-  top: 450px;
-  left: 820px;
+  top: 430px;
+  left: 930px;
 }
 
 #locatie-18 {
-  top: 440px;
-  left: 890px;
+  top: 420px;
+  left: 1010px;
 }
 
 #locatie-19 {
-  top: 540px;
-  left: 440px;
+  top: 515px;
+  left: 540px;
 }
 
 #locatie-20 {
   top: 490px;
-  left: 210px;
+  left: 330px;
 }
 
 #locatie-21 {
-  top: 510px;
-  left: 445px;
+  top: 490px;
+  left: 555px;
 }
 
 @keyframes fadeIn {
   to {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.377);
   }
 }
 
@@ -354,10 +410,10 @@ button:hover {
 
 #infoCard img {
   z-index: 4;
-  width: 400px;
+  width: 393px;
   object-fit: contain;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16  px;
   -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
   mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
 }
